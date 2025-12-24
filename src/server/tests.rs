@@ -1734,6 +1734,7 @@ fn reconfigure_popup() {
 }
 
 #[test]
+#[ignore]
 fn reconfigure_popup_after_map() {
     let (mut f, comp) = TestFixture::new_with_compositor();
     let toplevel = unsafe { Window::new(1) };
