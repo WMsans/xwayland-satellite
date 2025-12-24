@@ -988,8 +988,6 @@ impl<S: X11Selection + 'static> InnerServerState<S> {
         };
         if dims == win.attrs.dims {
             return;
-        } else if win.attrs.is_popup {
-            win.attrs.dims = dims;
         }
 
         debug!("Reconfiguring {:?} {:?}", event.window(), dims);
